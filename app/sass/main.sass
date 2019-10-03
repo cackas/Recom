@@ -1,0 +1,869 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+html
+	font-size: 10px
+	line-height: 1.2rem
+body
+	position: relative
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+.block
+	margin: 0 13.5vw
+ul
+	list-style: none
+	padding: 0
+	margin: 0
+p
+	margin: 0
+a, a:hover, a:active
+	color: $title
+	text-decoration: none
+.flex
+	display: flex
+.flex--row
+	flex-direction: row
+.flex--row-reverse
+	flex-direction: row-reverse
+.flex--column
+	flex-direction: column
+.btn
+	text-transform: uppercase
+	color: #fff
+	border-radius: .4rem
+	cursor: pointer
+.font--regular
+	font-family: $default-font
+.font--semibold
+	font-family: $semi-bold
+.font--bold
+	font-family: $bold
+.title-color
+	color: $title
+.text-color
+	color: $text
+.pink-color
+	color: $pink
+.green-color
+	color: $green
+.blue-color
+	color: $blue
+.double
+	justify-content: space-between
+	align-items: center
+.block--header
+	margin: 0 4.8vw 0 12.2vw
+.margin--block
+	margin-bottom: 7vw
+
+//Custom styles
+.head-btn #Group-40
+	display: none
+header
+	padding-top: 15rem
+.nav-wrap
+	position: fixed
+	width: 100%
+	top: 0
+	width: -webkit-fill-available
+	z-index: 2
+	background-color: #fff
+	align-items: center
+	justify-content: space-between
+	padding: 3vw 9.375vw 1.72vw
+.logo
+	align-items: center
+	img
+		width: 5.1rem
+		margin-right: 2.1rem
+	p
+		font-family: $semi-bold
+		text-transform: uppercase
+		font-size: 1.8rem
+		line-height: 2.2rem
+.nav
+	li
+		margin-right: 3vw
+		&:last-child
+			margin-right: 0
+		a
+			font-size: 1.4rem
+			line-height: 1.9rem
+			position: relative
+			&:before
+				content: ''
+				width: 1.5rem
+				height: 2px
+				transition: all .3s
+				background-color: #3471E2
+				position: absolute
+				top: 130%
+				left: 50%
+				transform: translateX(-50%)
+				opacity: 0
+			&:hover:before
+				opacity: 1
+			&.active:before
+				opacity: 1
+.nav
+	li.current_page_item
+		a
+			&:before
+				opacity: 1
+.btn--nav
+	font-size: 1.3rem
+	line-height: 1.7rem
+	padding: 1rem 3.1rem .9rem 1.8rem
+	background-color: #2627C5
+.btn--blue
+  background: #43beff
+  background: linear-gradient(to right, #43beff 0%, #2627c5 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43beff', endColorstr='#2627c5',GradientType=1 )
+.btn--green
+  background: #43beff
+  background: linear-gradient(to right, #029AC0 0%, #61F3AC 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#029AC0', endColorstr='#61F3AC',GradientType=1 )
+.header__left
+	align-items: flex-start
+	width: 36.7vw
+.descr-left
+	position: relative
+	width: 34.9vw
+.playVideo
+	position: absolute
+	top: 48%
+	right: 18%
+	color: #fff
+	font-size: .83vw
+	line-height: .83vw
+	&:hover
+		color: #fff
+.maximize-right
+	width: 42.4vw
+.analitick-right
+	width: 37.2vw
+.header__title
+	font-size: 4.4rem
+	line-height: 5.8rem
+	margin-bottom: 3.3rem
+.hidden
+	visibility: hidden
+.header__text
+	font-size: 1.8rem
+	line-height: 3.2rem
+	margin-bottom: 5.1rem
+.header__sale
+	font-size: 2.2rem
+	line-height: 3.7rem
+	margin-bottom: 5rem
+	color: #402A9B
+.btn--header
+	position: relative
+	transition: all .5s
+	font-size: 1.8rem
+	line-height: 2.4rem
+	padding: 1.6rem 5.6rem 1.5rem 9.7rem
+	background-color: #2627C5
+	&:hover
+		color: #fff
+		transform: scale(1.1)
+	&:before
+		content: ""
+		width: 7rem
+		height: 8.1rem
+		background-color: #50E3C2
+		position: absolute
+		top: 50%
+		left: 0
+		transform: translate(0, -50%)
+.header__right
+	width: 42.7vw
+	position: relative
+.maximize-left
+	position: relative
+	width: 42.4vw
+.img-wrap
+	position: absolute
+	top: 20%
+	left: 11.5%
+	width: 32vw
+	height: 23.5vw
+	overflow: hidden
+	cursor: pointer
+	&:hover .max__img
+		transform: translateY(-50%)
+.max__img
+	width:  100%
+	transition: all 1s
+
+.analitick-left
+	position: relative
+	width: 37.1vw
+.analitick__img
+	position: absolute
+	top: 22%
+	left: 6%
+	width: 28vw
+.text-wrap
+	position: absolute
+	left: 40%
+	bottom: 14%
+	font-family: $bold
+	z-index: 1
+.enjoy-title
+	font-size: 3rem
+	line-height: 4rem
+.growth
+	align-items: flex-start
+.percent
+	font-size: 6.1rem
+	line-height: 8.1rem
+	margin-right: 2rem
+	color: #50E3C2
+.growth__text
+	font-size: 3.3rem
+	line-height: 4.4rem
+
+#header-svg, #descr-svg, #maximize-svg, #analitick-svg
+	width: 100%
+	height: auto
+//Lists animations
+#list2
+  transform: matrix(0.174, -0.985, 0.985, 0.174, 131.031, 95.87) rotate(5deg)
+  transition: all 4s
+  &.active
+    transform: matrix(0.174, -0.985, 0.985, 0.174, 131.031, 95.87) rotate(0deg)
+
+#листик_1
+  transform: translate(0%, 15%) rotate(0deg)
+  transition: all 4s
+  &.active
+    transform: translate(0%, 15%) rotate(-4deg)
+
+#Group_25
+  transform: translate(18%, 5%) rotate(0deg)
+  transition: all 4s
+  &.active
+    transform: translate(18%, 5%) rotate(6deg)
+
+#list4
+  transform: translate(25%, 4%) rotate(-29deg)
+  transition: all 4s
+  &.active
+  	transform: translate(25%, 4%) rotate(-23deg)
+//End List animations
+.descr-block
+	.right
+		width: 27.6vw
+.descr__title
+	font-size: 3.5rem
+	line-height: 4.3rem
+	margin-bottom: 2.6rem
+.fromBottomStart
+	transform-origin: 100% 100%
+	transform: rotate3d(1,0,0, 90deg)
+.fromRightStart
+	transform-origin: 100% 0
+	transform: rotate3d(0,1,0, 90deg)
+.descr__text
+	font-size: 1.8rem
+	line-height: 3.2rem
+	margin-bottom: 3.5rem
+.descr__list
+	li
+		font-size: 1.8rem
+		line-height: 3rem
+		position: relative
+		padding-left: 5rem
+.descr__list li:before
+	content: ''
+	width: 3rem
+	height: 2.6rem
+	position: absolute
+	background-image: url('../img/@1x/liststyle.png')
+	background-size: cover
+	background-position: center
+	left: 0
+	top: 50%
+	transform: translateY(-50%)
+.feachers-block
+	align-items: center
+.feachers
+	margin-bottom: 2.5vw
+	flex-wrap: wrap
+	align-items: baseline
+	justify-content: center
+.feacher
+	width: 32.5rem
+	min-height: 27.8vw
+	padding: 1.4vw
+	align-items: flex-start
+	margin-right: 2vw
+	&:last-child
+		margin-right: 0
+	&:hover
+		box-shadow: 0 .52vw 2vw 0 rgba(#71828A, .2)
+.feacher__img
+	width: 13.2vw
+	align-self: center
+	margin-bottom: 1.8vw
+.feacher__title
+	font-size: 1.8rem
+	line-height: 2.2rem
+	margin-bottom: 2rem
+.feacher__text
+	font-size: 1.4rem
+	line-height: 2.4rem
+.feachers-btn
+	display: inline-block
+	font-family: $bold
+	font-size: 1.8rem
+	line-height: 2.2rem
+	padding: 2.4rem 3.6rem
+	transition: all .5s
+	transform: scale(1)	
+	margin-bottom: 3vw
+	&:hover
+		color: #fff
+		transform: scale(1.1)
+.cases__title
+	font-size: 3.4rem
+	line-height: 4.2rem
+	margin-bottom: 8.6rem
+.cases
+	align-items: flex-start
+	font-family: $semi-bold
+	color: $title
+	flex-wrap: wrap
+	justify-content: center
+.case
+	width: 32.5rem
+	min-height: 27.8vw
+	padding: 3.3vw 1.7vw
+	box-shadow: 0 .2vw .78vw 0 rgba(#072A44, .04)	
+	border-radius: .31vw
+	margin-right: 2vw
+	&:last-child
+		margin-right: 0
+	&:hover
+		box-shadow: 0 .52vw 2vw 0 rgba(#71828A, .2)
+	&:nth-child(1)
+		.case__logo
+			width: 9vw
+			margin-bottom: 2vw
+	&:nth-child(2)
+		padding-top: 2.1vw
+		.case__logo
+			width: 9vw
+			margin-bottom: 1.1vw
+	&:nth-child(3)
+		padding-top: 2.5vw
+		.case__logo
+			width: 6.3vw
+			margin-bottom: 1.8vw
+	&:nth-child(4)
+		.case__logo
+			width: 9.375vw
+			margin-bottom: 2.1vw
+.type, .line
+	justify-content: space-between
+	align-items: center
+.type
+	margin-bottom: 4.6vw
+.type__name
+	font-size: 1.6rem
+	line-height: 2.5rem
+.type__img
+	width: 4.3vw
+.case__title
+	font-size: 1.6rem
+	line-height: 2.1rem
+	margin-bottom: 2.7vw
+.headerimg
+	position: absolute
+	top: 11%
+	left: 16%
+	width: 60%
+.line__name
+	font-size: 1.2rem
+	line-height: 1.5rem
+.line__number
+	font-size: 2rem
+	line-height: 2.4rem
+.line
+	margin-bottom: 1.6rem
+.reviews-block
+	position: relative
+	align-items: center
+	margin-bottom: 14vw
+#svg-reviews
+	position: absolute
+	bottom: -20%
+	left: 0
+	width: 41vw
+.reviews
+	margin-bottom: 4.6vw
+.reviews
+	width: 23.9vw
+.review
+	outline: none
+	align-items: flex-start
+	width: 23.9vw
+.review__head
+	margin-bottom: 4.8vw
+	align-items: center
+.review__logo
+	width: 7rem
+	height: .9rem
+	margin-right: 2.1vw
+.review__title
+	font-size: 1.8rem
+	line-height: 2.5rem
+.review__text
+	font-size: 1.4rem
+	line-height: 2.4rem
+.reviews__title
+	font-size: 3.5rem
+	line-height: 4.3rem
+	margin-bottom: 7.4vw
+.carousel-arrows
+	font-size: 3rem
+	color: $blue
+.left-arrow
+	margin-right: 2vw
+.left-arrow, .right-arrow
+	cursor: pointer
+.clients-block
+	align-items: center
+.clients
+	align-self: center
+	justify-content: center
+	flex-wrap: wrap
+	img
+		height: auto
+.clients__title
+	font-size: 3.5rem
+	line-height: 4.3rem
+	margin-bottom: 5.7vw
+.faq-block
+	display: none
+	align-items: center
+	&.faq-block--price
+		display: flex
+.faq__title
+	font-size: 3.5rem
+	line-height: 4.3rem
+	margin-bottom: 4.7vw
+// Accordion
+.accordion
+	width: 50vw
+	li:first-child .accordion__item
+		background-size: cover
+.accordion__item
+	padding: 2.8vw 3.5vw
+	border-radius: .31vw
+	border: 1px solid rgba(#979797, .15)
+	margin-bottom: 1.5vw
+	cursor: pointer
+	position: relative
+	width: 100%
+	&:before
+		position: absolute
+		top: 0
+		left: 0
+		content: ""
+		width: 100%
+		height: 100%
+		background-image: url(../img/bgfaq.png)
+		background-size: 100% 100%
+		transition: all .3s
+		opacity: 0
+input[type='radio']
+	display: none
+	& + .accordion__item
+		.cl-btn-9
+			position: absolute
+			width: 22px
+			height: 22px
+			cursor: pointer
+			z-index: 1
+			top: 50%
+			transform: translateY(-50%)
+			left: 100%
+			&:before
+				position: absolute
+				content: ""
+				width: 22px
+				height: 4px
+				left: -31%
+				top: 30%
+				background: #B8C0C4
+				transform: rotate(45deg)
+				transition: 0.2s
+			&:after
+				position: absolute
+				content: ""
+				width: 22px
+				height: 4px
+				right: -31%
+				top: 30%
+				background: #B8C0C4
+				transform: rotate(-45deg)
+				transition: 0.2s
+		&>.accordion__item__content
+			transition: all .3s
+			display: none
+	&:checked + .accordion__item
+		box-shadow: 0 .52vw 2vw rgba(#71828A, .2)
+		&:before
+			opacity: 1
+		.cl-btn-9-up
+			&:before
+				position: absolute
+				content: ""
+				width: 22px
+				height: 4px
+				left: 0
+				top: 30%
+				background: #B8C0C4
+				transform: rotate(45deg)
+				transition: 0.2s
+			&:after
+				position: absolute
+				content: ""
+				width: 22px
+				height: 4px
+				right: 0
+				top: 30%
+				background: #B8C0C4
+				transform: rotate(-45deg)
+				transition: 0.2s
+		&>.accordion__item__content
+			display: inherit
+.item__title
+	font-size: 2.5rem
+	line-height: 3.5rem
+	margin-bottom: 2.9rem
+	position: relative
+.accordion__item__content
+	font-size: 1.4rem
+	line-height: 2.4rem
+// End Akkordion
+footer
+	border-top: 1px solid rgba(#979797, .15)
+	padding: 1.6vw 14.1vw 2.3vw 12.5vw
+.logo--footer
+	margin-bottom: 3.2vw
+	img
+		width: 3.5rem
+		margin-right: 1.5rem
+	p
+		font-size: 1.5rem
+		line-height: 2rem
+.footer__content
+	align-items: center
+	justify-content: space-between
+.footer__descr
+	width: 41.6vw
+	font-size: 1.2rem
+	line-height: 2.3rem
+	margin-bottom: 2.8vw
+.footer__rights
+	font-size: 1.2rem
+	line-height: 3rem
+.footer__nav
+	font-size: 1.4rem
+	line-height: 3rem
+.footer__menu
+	margin-right: 7.2vw
+/**
+ * Simple fade transition,
+.mfp-fade
+  &.mfp-bg
+    opacity: 0
+    -webkit-transition: all 0.15s ease-out
+    -moz-transition: all 0.15s ease-out
+    transition: all 0.15s ease-out
+    &.mfp-ready
+      opacity: 0.8
+    &.mfp-removing
+      opacity: 0
+  &.mfp-wrap
+    .mfp-content
+      opacity: 0
+      -webkit-transition: all 0.15s ease-out
+      -moz-transition: all 0.15s ease-out
+      transition: all 0.15s ease-out
+    &.mfp-ready .mfp-content
+      opacity: 1
+    &.mfp-removing .mfp-content
+      opacity: 0
+/*
+ *  Headhesive Specific Styles
+ */
+
+.banner--clone
+  position: fixed
+  width: -webkit-fill-available
+  background-color: #fff
+  z-index: 2
+  top: 0
+  left: 0
+  transform: translateY(-100%)
+  transition: all 300ms ease-in-out
+
+.banner--stick
+  transform: translateY(0%)
+/*
+ *  End Headhesive Specific Styles
+ */
+.price-tab
+	display: none
+#price-tab-basic
+	display: inherit
+.price-wrap, #price-form
+	align-items: center
+.price__title
+	font-family: $semi-bold
+	font-size: 4.4rem
+	line-height: 5.4rem
+	margin-bottom: 4.9vw
+	color: #1d262d
+	letter-spacing: .5px
+.price__descr
+	font-size: 1.8rem
+	line-height: 3.2rem
+	margin-bottom: 3.6vw
+	text-align: center
+.price-form__title
+	font-family: $semi-bold
+	margin-bottom: 3.6vw
+	font-size: 2.2rem
+	line-height: 3.7rem
+	color: #000124
+.cmses-wrap
+	margin-bottom: 5.1vw
+.cms-wrap
+	width: 26rem
+	margin-right: 2vw
+	height: 8rem
+	&:last-child
+		margin-right: 0
+	label
+		margin-bottom: 0
+		box-shadow: 0px .4rem 2rem rgba(7,42,68,0.2)
+		.green
+			display: none
+		.white
+			display: inherit
+	img
+		width: 100%
+		height: 100%
+	input:checked + label
+		.green
+			display: inherit
+		.white
+			display: none
+.tarifs-wrap
+	font-size: 2.5rem
+	line-height: 3rem
+	label
+		margin-right: 1vw
+		margin-bottom: 0
+		position: relative
+		color: #1d262d
+		padding: 2.9rem 4.6rem
+		transition: all .3s
+		&:last-child
+			margin-right: 0
+	input:checked + label
+		font-family: $semi-bold		
+		box-shadow: 0px .4rem 2rem rgba(7,42,68,0.2)
+		&:before
+			content: ''
+			width: 1.5rem
+			height: 2px
+			transition: all .3s
+			background-color: #3471E2
+			position: absolute
+			top: 75%
+			left: 50%
+			transform: translateX(-50%)
+			z-index: 1
+		&:after
+			content: ''
+			width: 100%
+			height: 2rem
+			background-color: #fff
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translate(-50%, 0%)
+			z-index: 1
+.price-tabs
+	padding: 4.6vw
+	box-shadow: 0px .4rem 2rem rgba(7,42,68,0.2)
+	position: relative
+	&:after
+		content: ''
+		width: 100%
+		height: 2rem
+		background-color: #fff
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translate(-50%, 0%)
+.price-tab-wrap
+	justify-content: space-between
+	align-items: center
+.price-tab
+	width: 70.5vw
+.price-tab__form
+	width: 29.1vw
+.cms-tab
+	align-items: center
+#cms-tab-2
+	display: none
+.price-tab__img
+	width: 31.5vw
+	img
+		width: 100%
+.price-tab__top
+	justify-content: space-between
+	align-items: center
+	flex-wrap: wrap
+	padding: 1.3vw 0
+	border-bottom: 1px solid #000124
+	margin-bottom: 1.6vw
+.price-tab__title
+	font-family: $semi-bold
+	font-size: 3.5rem
+	line-height: 4.3rem
+	color: #1a252f
+.time-tab-wrap
+	align-items: center
+	label
+		padding: .7rem 2.7rem
+		border: 2px solid #c4c9d2
+		border-radius: .4rem
+		color: #c4c9d2
+		font-size: 1.8rem
+		line-height: 2.2rem
+		width: 11.8rem
+		text-align: center
+		margin-right: .78vw
+		margin-bottom: 0
+		text-transform: lowercase
+		font-family: $semi-bold
+		&:last-child
+			margin-right: 0
+	input:checked + label
+		border: 2px solid #4a90e2
+		color: #4a90e2
+.price-tab__descr
+	font-size: 1.6rem
+	line-height: 3.2rem
+	margin-bottom: .9vw
+.price-tab__banner
+	width: fit-content
+	margin: 0 auto
+	border: 2px solid #f9d7cf
+	padding: 2.3rem 4.5rem
+	border-radius: .6rem
+	margin-bottom: 1.4vw
+	font-size: 1.6rem
+	line-height: 3.2rem
+	color: #000124
+	text-align: center
+	.year, .month
+		display: none
+		&.active
+			display: inline
+.price-list
+	li
+		margin-bottom: 1.5vw
+.price-btn
+	width: fit-content
+	border: none
+	font-size: 1.6rem
+	line-height: 1.6rem
+	padding: 1.5rem 3.6rem
+	font-family: $bold
+	margin: 0 auto
+.big-bold
+	font-size: 2.5rem
+.small-bold
+	font-size: 2rem
+.bold-text
+	font-family: $semi-bold
+.green-text
+	color: #50e3c2
+.head-btn
+	visibility: hidden
+	transition: all .3s
+	&:hover
+		transform: scale(1.1)
+.candles
+	position: absolute
+	top: -100%
+	left: -20%
+	width: 47%
+	transition: all .3s
+	opacity: 0
+	transform: translateY(200%)
+	&.bars
+		opacity: 1
+		transform: translateY(0)
+#descr-svg #Path_2-16,#descr-svg #Path-2
+	transform: translate(-1.29%, 0)
+.coffee-2
+	animation-delay: .4s !important
+.coffee-1, .coffee-2
+	transform: rotate3d(0,0,0, 360deg)
+	animation: coffe 3s linear infinite
+#Oval1, #Oval-2, #Oval-3
+	transform-origin: 12% 14%
+	transform: scale(.5)
+	animation: water linear 6s infinite, opacity1 ease-out 6s infinite
+#Oval-2
+	animation-delay: 2s !important
+#Oval-3
+	animation-delay: 4s !important
+#bt-play-video
+	transform: translate(64%, 57%)
+.popup-youtube:hover #bt-play-video
+	animation: tuktuk .4s linear
+#Path_2-4
+	display: none
+#svg-reviews
+	#rev_3
+		animation: review-1 3.5s ease infinite
+	#rev_2
+		animation-delay: 1.5s
+		animation: review-2 3.5s ease infinite
+	#Group-5
+		animation-delay: 2s
+		animation: review-3 3.5s ease infinite
+
+.mobile-header, .header-img--mobile, .head-btn--mobile, .descr--mobile, .descr-play, .anal--mobile, .max--mobile, .footer__logo--mobile, .footer__rights--mobile, .reviews-img--mobile, .menu--mobile
+	display: none
+@import "media" // Always at the end

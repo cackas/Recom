@@ -1,0 +1,393 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+    .text-wrap
+        left: 20%
+        bottom: -30%
+    .tarifs-wrap label
+        padding: 2rem 3rem
+// ≥768px
++media-breakpoint-down(sm)
+    header
+        padding-top: 25.3vw
+        position: relative
+    .mobile-header
+        display: flex
+        position: fixed
+        width: 100%
+        top: 0
+        left: 0
+        padding: 1.56vw 8.75vw
+        align-items: center
+        justify-content: space-between
+        background-color: #fff
+        z-index: 2
+    .nav-wrap, .head-btn, .header__right, .descr-left, .maximize-left, .analitick-left, #svg-reviews, .footer__rights
+        display: none
+    .logo--mobile
+        width: 40.6vw
+        img
+            width: 100%
+    .adaptive-btn
+        width: 6.8vw
+        cursor: pointer
+        img
+            width: 100%
+    .block
+        margin: 0 8.75vw
+    .header__left
+        width: 100%
+    .header-img--mobile
+        display: inherit
+        position: relative
+        width: 100%
+        margin-bottom: 4.3vw
+        img
+            width: 100%
+    .text-wrap
+        bottom: 3%
+        left: 40%
+    .header__title
+        font-size: 9.3vw
+        line-height: 11.5vw
+        margin-bottom: 2.1vw
+    .enjoy-title, .growth__text
+        font-size: 5vw
+        line-height: 6.25vw
+    .percent
+        font-size: 9.3vw
+        line-height: 11.5vw
+    .header__text
+        font-size: 4.3vw
+        line-height: 7.8vw
+        margin-bottom: 6.25vw
+    .header__sale
+        font-size: 5.6vw
+        line-height: 7.8vw
+        margin-bottom: 6.25vw
+    .head-btn--mobile
+        display: inherit
+        width: 100%
+        img
+            width: 100%
+            height: auto
+    .margin--block
+        margin-bottom: 18.75vw
+    .descr--mobile
+        display: inherit
+        width: 100%
+        img
+            width: 100%
+    .descr-play
+        display: inherit
+        transform: translate(-10%)
+    .descr-block .right
+        width: 100%
+    .descr__title
+        font-size: 7.8vw
+        line-height: 9.3vw
+        margin-bottom: 6.25vw
+    .descr__text
+        font-size: 4.3vw
+        line-height: 7.8vw
+        margin-bottom: 9vw
+    .descr__list li
+        font-size: 4.3vw
+        line-height: 7.8vw
+        margin-bottom: 6.25vw
+        padding-left: 10.9vw
+    .descr__list li:before
+        width: 6.25vw
+        height: 5.3vw
+    .feachers
+        flex-wrap: wrap
+        margin-bottom: 14vw
+    .feacher
+        width: 100%
+    .feacher__img
+        width: 60.6vw
+    .feacher__title
+        width: 100%
+        text-align: center
+        font-size: 5vw
+        line-height: 6.25vw
+        margin-bottom: 6.25vw
+    .feacher__text
+        font-size: 3.75vw
+        line-height: 6.25vw
+    .feachers-btn
+        font-size: 5.6vw
+        line-height: 6.8vw
+        padding: 7.5vw 15.3vw
+    .anal--mobile, .max--mobile
+        width: 100%
+        display: inherit
+    .cases__title, .reviews__title, .clients__title, .faq__title
+        font-size: 7.8vw
+        line-height: 9.3vw
+        margin-bottom: 9.3vw
+    .case
+        width: 100%
+        padding: 12.5vw 7.1vw
+        margin-bottom: 12.5vw
+        &:last-child
+            margin: 0
+        .case__logo
+            width: 44vw !important
+            margin-bottom: 15.6vw !important
+    .type
+        margin-bottom: 9.3vw
+    .type__name
+        font-size: 5vw
+        line-height: 7.8vw
+    .type__img
+        width: 17.1vw
+    .case__title
+        font-size: 5vw
+        line-height: 6.5vw
+        margin-bottom: 15.5vw
+    .line
+        margin-bottom: 5vw
+    .line__name
+        font-size: 3.75vw
+        line-height: 7.5vw
+    .line__number
+        font-size: 6.25vw
+        line-height: 7.5vw
+    .cases-block
+        margin: 0 4.6vw
+        margin-bottom: 18.75vw
+    .reviews-block
+        margin: 0 8.75vw
+        margin-bottom: 18.75vw
+    .reviews
+        width: 100%
+        margin-bottom: 17vw
+    .review__head
+        flex-direction: column
+        align-items: center
+        margin-bottom: 20.3vw
+    .review__logo
+        width: 21.8vw
+        height: inherit
+        margin-right: 0
+        margin-bottom: 8.1vw
+    .review__title
+        font-size: 5.6vw
+        line-height: 7.8vw
+    .review__text
+        font-size: 4.3vw
+        line-height: 7.8vw
+    .carousel-arrows
+        font-size: 7vw
+        margin-bottom: 12.5vw
+    .left-arrow
+        margin-right: 12.5vw
+    .faq-block
+        margin: 0
+        margin-bottom: 18.75vw
+    .accordion
+        width: 100%
+    .item__title
+        font-size: 5vw
+        line-height: 6.5vw
+        margin-bottom: 5.3vw
+    .accordion__item__content
+        font-size: 4.3vw
+        line-height: 7.8vw
+    .accordion__item
+        padding: 17.8vw 9.3vw 14vw
+        margin-bottom: 6.25vw
+    input[type=radio]+.accordion__item .cl-btn-9
+        left: inherit
+        right: -15vw
+    .item__title
+        width: 80%
+    .clients
+        img
+            width: 37.5vw
+    footer
+        padding: 7.5vw 7.5vw 12.8vw
+    .footer__logo, .logo-name
+        display: none
+    .logo--footer
+        margin-bottom: 13.1vw
+        .footer__logo--mobile
+            display: inherit
+            width: 36.25vw
+    .footer__content
+        flex-direction: column
+    .footer__descr
+        width: 100%
+        font-size: 3.75vw
+        line-height: 6.25vw
+        margin-bottom: 9.3vw
+    .footer__nav
+        justify-content: space-between
+        width: 100%
+        font-size: 4.3vw
+        line-height: 9.3vw
+    .footer__rights--mobile
+        display: inherit
+        font-size: 4.3vw
+        line-height: 9.3vw
+        text-align: center
+        padding: 7.8vw 0
+        border-top: 1px solid rgba(151,151,151,.15)
+    .reviews-img--mobile
+        display: inherit
+        width: 100%
+    .menu--mobile
+        position: fixed
+        top: 0
+        left: 0
+        background-color: rgba(#000124, .68)
+        width: 100%
+        height: 100%
+        .menu-wrap--mobile
+            width: 79.6vw
+            height: 100%
+            background-color: #fff
+            padding: 12.1vw 14.3vw 23.4vw
+        &.show
+            display: flex
+        .btn--nav
+            font-size: 5vw
+            line-height: 6.25vw
+            text-align: center
+            padding: 5vw 9.3vw
+    .adaptive-btn--dismiss
+        position: absolute
+        top: 5vw
+        right: 5.9vw
+        width: 6.3vw
+        cursor: pointer
+        img
+            width: 100%
+    .nav li a:before
+        width: 5vw
+    .nav li
+        margin-right: 0
+        margin-bottom: 12vw
+        a
+            font-size: 6.25vw
+            line-height: 7.5vw
+    .price__title
+        font-size: 9.3vw
+        line-height: 11.5vw
+        margin-bottom: 6.25vw
+    .price__descr
+        font-size: 4.3vw
+        line-height: 7.8vw
+        margin: 0 8.75vw
+        margin-bottom: 6.25vw
+    .price-form__title
+        font-size: 5.6vw
+        line-height: 11.5vw
+        margin-bottom: 6.25vw
+    .cmses-wrap
+        flex-direction: column
+        margin-bottom: 17.1vw
+    .cms-wrap
+        height: inherit
+        margin-right: 0
+        label
+            height: 100%
+        &:first-child
+            margin-bottom: 9.3vw
+    .price-wrap
+        margin: 0
+    .price-tab-wrap
+        flex-wrap: wrap
+    .price-tab__form, .price-tab
+        width: 100%
+    .price-tab__top
+        flex-direction: column
+        border: none
+        margin-bottom: 9.3vw
+    .price-tab__title
+        font-size: 7.8vw
+        line-height: 9.3vw
+        margin-bottom: 19vw
+        position: relative
+        &:after
+            content: ''
+            width: 84vw
+            height: 2px
+            background-color: #000
+            position: absolute
+            bottom: calc(0% - 9.3vw)
+            left: 50%
+            transform: translateX(-50%)
+    .price-tabs
+        padding: 12.5vw 6.5vw
+    .time-tab-wrap label
+        width: 36.8vw
+        padding: 2.1vw
+        font-size: 5.6vw
+        line-height: 6.8vw
+        border: 3px solid #c4c9d2
+        margin-right: 4.6vw
+        &:last-child
+            margin-right: 0
+    .time-tab-wrap input:checked+label
+        border: 3px solid #4a90e2
+    .price-tab__descr
+        font-size: 4.3vw
+        line-height: 7.8vw
+        margin-bottom: 6.25vw
+    .price-tab__banner
+        width: 100%
+        padding: 8.1vw 3.4vw
+        margin-bottom: 6.8vw
+        font-size: 4.3vw
+        line-height: 8.75vw
+    .big-bold
+        font-size: 6.8vw
+    .small-bold
+        font-size: 6.25vw
+    .price-tab__img
+        width: 100%
+        padding-bottom: 20%
+        position: relative
+        bottom: 20vw
+    .price-btn
+        width: 100%
+        padding: 7.5vw
+        font-size: 5.6vw
+        line-height: 6.8vw
+        position: relative
+        top: 90vw
+    .price-tabs
+        margin-bottom: 0
+    .tarifs-wrap
+        font-size: 3.2vw
+        line-height: 3.9vw
+        label
+            padding: 3.7vw 6.3vw
+    .tarifs-wrap input:checked+label:after
+        height: 2.6vw
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

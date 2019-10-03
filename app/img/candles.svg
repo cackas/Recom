@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="396px" height="202px" viewBox="0 0 396 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="73.5296408%" y1="14.9356618%" x2="73.5296408%" y2="74.1182215%" id="linearGradient-1">
+            <stop stop-color="#CCF2F6" offset="0%"></stop>
+            <stop stop-color="#BBE1FC" offset="32.8706625%"></stop>
+            <stop stop-color="#CCE3FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="home-02.08" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-02.08-" transform="translate(-449.000000, -3379.000000)" fill="url(#linearGradient-1)">
+            <path d="M628,3458 L661,3458 L661,3651 L628,3651 L628,3458 Z M672,3468 L705,3468 L705,3651 L672,3651 L672,3468 Z M717,3478 L750,3478 L750,3651 L717,3651 L717,3478 Z M762,3424 L795,3424 L795,3651 L762,3651 L762,3638.65178 L762,3424 Z M811,3454 L845,3454 L845,3628 L811,3628 L811,3454 Z M449,3379 L482,3379 L482,3649 L449,3649 L449,3379 Z M492,3398 L525,3398 L525,3648 L492,3648 L492,3398 Z M538,3454 L571,3454 L571,3649 L538,3649 L538,3454 Z M583,3436 L616,3436 L616,3649 L583,3649 L583,3436 Z" id="Combined-Shape" transform="translate(647.000000, 3515.000000) scale(-1, 1) translate(-647.000000, -3515.000000) "></path>
+        </g>
+    </g>
+</svg>
